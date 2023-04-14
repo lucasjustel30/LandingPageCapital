@@ -1,0 +1,106 @@
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="images/undraw_financial_data_re_p0fl (1).svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                  
+                    <div class="logo-image">
+                        <img src="images/capital.svg" alt="">
+                    </div>
+                </div>
+                <!--href='#' nao leva a lugar algum-->
+
+                <div>
+                    <h6>Preencha o formulário abaixo para seceber em seu e-mail um e-book sobre educação financeira</h6>
+                </div>
+
+
+                <!-- label for e input id devem ser iguais-->
+                <!--placeholder é o nome que aparece entro do campo de entrada-->
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                <label for="investimento"><strong>Quanto pretende investir ?</strong></label>
+                <select name="investimento" id="investimento">
+                    <option value="menos-de-100k">Menos de R$ 100.000</option>
+                    <option value="100k-300k">Entre R$ 100.000 e R$ 300.000</option>
+                    <option value="300k-500k">Entre R$ 300.000 e R$ 500.000</option>
+                    <option value="500k-1MM">Entre R$ 500.000 e R$ 1.000.000</option>
+                    <option value="acima-de-1MM">Acima de R$ 1.000.000</option>
+                </select>
+
+
+                    
+
+                </div><br>
+
+                <div class="apetiteRisco">
+                    <div class="title-apetiteRisco">
+                        <h6>Perfil: </h6>
+                    </div>
+
+                    <!-- campo de preenchimento bolinha -> type='radio'-->
+                    <!--label fecha a tag-->
+                    <div class="apetiteRisco">
+                        <div class="apetiteRisco-input">
+                            <input id="arrojado" type="radio" name="risco">
+                            <label for="arrojado">Arrojado</label>
+                        </div>
+
+                        <div class="apetiteRisco-input">
+                            <input id="moderado" type="radio" name="risco">
+                            <label for="moderado">Moderado</label>
+                        </div>
+                        <div class="apetiteRisco-input">
+                            <input id="conservador" type="radio" name="risco">
+                            <label for="conservador">Conservador</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Quero receber um e-book sobre educação financeira</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
